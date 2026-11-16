@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Manrope:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 193 41% 94%;
+    --foreground: 191 39% 10%;
+    --card: 193 45% 97%;
+    --card-foreground: 191 39% 10%;
+    --popover: 193 45% 97%;
+    --popover-foreground: 191 39% 10%;
+    --primary: 181 62% 22%;
+    --primary-foreground: 193 41% 96%;
+    --secondary: 193 33% 86%;
+    --secondary-foreground: 191 39% 14%;
+    --muted: 193 28% 89%;
+    --muted-foreground: 191 14% 34%;
+    --accent: 193 36% 84%;
+    --accent-foreground: 191 39% 12%;
+    --destructive: 4 62% 42%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 193 24% 78%;
+    --input: 193 24% 74%;
+    --ring: 181 62% 28%;
+    --radius: 0.625rem;
+    --sidebar-background: 193 38% 90%;
+    --sidebar-foreground: 191 30% 22%;
+    --sidebar-primary: 181 62% 22%;
+    --sidebar-primary-foreground: 193 41% 96%;
+    --sidebar-accent: 193 36% 84%;
+    --sidebar-accent-foreground: 191 39% 12%;
+    --sidebar-border: 193 24% 78%;
+    --sidebar-ring: 181 62% 28%;
+  }
+
+  .dark {
+    --background: 191 30% 8%;
+    --foreground: 193 30% 92%;
+    --card: 191 28% 11%;
+    --card-foreground: 193 30% 92%;
+    --popover: 191 28% 11%;
+    --popover-foreground: 193 30% 92%;
+    --primary: 193 45% 82%;
+    --primary-foreground: 191 39% 12%;
+    --secondary: 191 22% 16%;
+    --secondary-foreground: 193 30% 90%;
+    --muted: 191 20% 16%;
+    --muted-foreground: 193 15% 62%;
+    --accent: 191 24% 18%;
+    --accent-foreground: 193 30% 92%;
+    --destructive: 4 55% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 191 20% 20%;
+    --input: 191 20% 22%;
+    --ring: 193 45% 70%;
+    --sidebar-background: 191 30% 10%;
+    --sidebar-foreground: 193 20% 80%;
+    --sidebar-primary: 193 45% 82%;
+    --sidebar-primary-foreground: 191 39% 12%;
+    --sidebar-accent: 191 24% 16%;
+    --sidebar-accent-foreground: 193 30% 92%;
+    --sidebar-border: 191 20% 20%;
+    --sidebar-ring: 193 45% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  }
+  .font-display {
+    font-family: "Fraunces", Georgia, serif;
+  }
+}
+
+@layer components {
+  .section-card {
+    @apply rounded-2xl border border-border bg-card p-6 shadow-sm;
+  }
+}
